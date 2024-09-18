@@ -1,0 +1,134 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1046{\fonttbl{\f0\fnil\fcharset0 Cascadia Code;}{\f1\fnil\fcharset0 Calibri;}{\f2\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red0\green176\blue80;\red255\green0\blue0;\red0\green77\blue187;\red255\green192\blue0;\red155\green187\blue89;\red100\green107\blue134;\red0\green0\blue255;\red79\green129\blue189;\red204\green204\blue204;\red155\green0\blue211;\red255\green0\blue128;\red247\green150\blue70;\red255\green255\blue255;\red0\green0\blue0;\red192\green192\blue192;\red255\green255\blue0;\red75\green172\blue198;\red165\green165\blue165;\red0\green128\blue0;\red128\green0\blue128;\red0\green255\blue255;\red128\green128\blue128;}
+{\*\generator Riched20 10.0.22621}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\qc\f0\fs44\lang22 CURSO DE PYTHON (Guanabara)\par
+\par
+\b\fs40 Principais Caracteristicas: \fs32\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b0 Linguagem de prop\'f3sito geral\par
+{\pntext\f2\'B7\tab}Multiplataforma, Multibibliotecas\par
+{\pntext\f2\'B7\tab}Orientada a Objetos\par
+
+\pard\sa200\sl276\slmult1\par
+
+\pard\sa200\sl276\slmult1\qc\b\fs40 Tips and Tricks\par
+-----------------------------------\par
+
+\pard\sa200\sl276\slmult1\b0\fs36 INT = 7, -4, 0, 9875\par
+FLOAT = 4.5, 0.076, -15.223, 7.0\par
+BOOL = \cf1\b True\cf0\b0 , \cf2\b False\cf0\par
+\b0 STRING = 'ol\'e1', '7.5', 'Mundo' \par
+---------------------------------------\par
+\fs32 Formatando o tipo primitivo de uma vari\'e1vel:\par
+EX: \par
+\b n1\b0  = \cf2 int\cf0  (input('Digite um valor :'))\par
+input = \cf1 7\cf0\par
+type: \cf2 int number\cf0\line\line\b n2\b0  = \cf3 float\cf0  (input('Digite outro valor:'))\par
+input = \cf1 7.0\cf0\par
+type: \cf3 float number \cf0\fs36\par
+\fs32 --------------------------------------------\cf4\b\par
+.format \cf0\b0 = substitui \{\} dentro de um comando;\par
+EX: \line\cf5\b n1\cf0  = x      \cf4 n2\cf0  = y     \cf3 res\cf0  = x + y \b0\line print ('A soma de \cf2\{\cf1 0\cf2\}\cf0  e \cf2\{\cf4 1\cf2\}\cf0  vale\cf2\{\cf3 2\cf2\}\cf0 '.format (\cf5 n1\cf0 , \cf4 n2\cf0 ,\cf5  \cf3 res\cf0 ))\par
+\line\ul print (' A soma de \cf1 x\cf0  e \cf4 y\cf0  vale \cf3 xy\cf0  ')\line\line ORDEM DE PRECED\'caNCIA\par
+\ulnone\b 1-() 2-**\cf2  \cf0 3- * / // %\cf2  \cf0 4- + -\par
+\b0 --------------------------------------------\cf4\b\par
+
+\pard\sa200\sl276\slmult1\qc\cf0\ul\fs36 IMPORT\ulnone\b0  \fs32\par
+'O comando \ul\b import\ulnone\b0  em Python \'e9 utilizado para incluir m\'f3dulos e pacotes externos no seu c\'f3digo. M\'f3dulos e pacotes s\'e3o arquivos e cole\'e7\'f5es de arquivos que cont\'eam c\'f3digo Python reutiliz\'e1vel, como \cf3\b fun\'e7\'f5es\cf0\b0 , \cf4\b classes\cf0  \b0 e \cf6\b vari\'e1veis\cf0\b0 . Quando voc\'ea usa o \ul\b import\ulnone\b0 , est\'e1 basicamente dizendo ao Python para carregar e disponibilizar esse c\'f3digo externo para que voc\'ea possa us\'e1-lo no seu programa.'\par
+\par
+\'c9 poss\'edvel analisar quais bibliotecas existem e suas funcionalidades na pr\'f3pria documenta\'e7\'e3o do Python em: {{\field{\*\fldinst{HYPERLINK https://docs.python.org/3/library/index.html }}{\fldrslt{https://docs.python.org/3/library/index.html\ul0\cf0}}}}\f0\fs32\par
+\par
+Verificar no \b Python Console \b0 o versionamento do Python para consultar na documenta\'e7\'e3o dele a sua funcionabilidade; \par
+\par
+--------------------------------------------\par
+\ul\b\fs36 CARACTERES - FATIAMENTO\par
+\ulnone -\ul\par
+
+\pard\sa200\sl276\slmult1\ulnone\fs32 len: \b0 fun\'e7\'e3o interna respons\'e1vel por mostrar a quantidade de caracteres de uma string\ul\b\fs36\par
+\ulnone\b0\fs32 Para realizar um print para grandes texto ao inv\'e9s de printar linha por linha, \'e9 poss\'edvel realizar o comando \ul\b print\cf8\ulnone\b0 (""" frase....\par
+e inserir no final dela """)\cf0  \par
+--------------------------------------------\par
+\b varivel.upper()\b0 : joga todas os caracteres para \ul MAIUSCULA \ulnone\par
+\b variavel.lower()\b0 : joga todas os caracteres para \ul MINUSCULO \par
+\ulnone --------------------------------------------\ul\par
+\ulnone\b variavel.strip()\b0 : remove espa\'e7os citados no argumento da fun\'e7\'e3o (), sen\'e3o apenas espa\'e7os indesejaveis no inicio e fim da frase como espa\'e7os e quebra de linha (antiburro)\par
+\b .rstrip() \b0 - \ul para remover apenas da direita\ulnone\line\b .lstrip() \b0 - \ul para remover apenas da esquerda\par
+\ulnone --------------------------------------------\b\par
+variavel.replace\ul\b0 (\'b9'x', \'b9'y')\ulnone : realiza a substitui\'e7\'e3o de um caracter ou palavra de uma variavel por outra\par
+1 - \ul qual string deseja encontrar para substituir\ulnone ; \par
+2- \ul qual string deseja sobrepor \'e0 ela\ulnone ; \par
+\cf2 ex: \cf8\b frase = 'Oi' --> print : Oi\cf0\par
+\b0\tab\cf1\b frase = frase.replace('Oi','tchau')\par
+\tab ---> print : tchau\cf0\b0  \par
+--------------------------------------------\par
+\b variavel.find\ul\b0 ('something'):\ulnone  retorna um \'edndice inteiro da posi\'e7\'e3o onde a substring foi encontrada ou -1 se a substring n\'e3o existir.\par
+\b variavel.count('x'): \b0 retorna um n\'famero inteiro que indica quantas vezes a substring aparece na string\par
+--------------------------------------------\par
+\b variavel.split() \b0 : realiza uma divis\'e3o considerando os espa\'e7os da string, tecnicamente cria uma lista com todas as palavras de uma cadeia de caracteres com novas numera\'e7\'f5es na sua contagem;\par
+\cf9\b separador\cf0 '-'\cf4 .join\cf0 (variavel): \b0 ao contrario do comando split(), este comando \'e9 responsavel por realizar a jun\'e7\'e3o de uma cadeia de caracteres e substituir os espa\'e7os de uma string com um caracterer de sua escolha. \par
+--------------------------------------------\par
+
+\pard\sa200\sl276\slmult1\qc\ul\b\fs36 CONDICIONAIS\ulnone\par
+
+\pard\sa200\sl276\slmult1\cf10 if\cf0  \cf4\ul condi\'e7\'e3o\cf0\ulnone () :\par
+\tab\cf1 comando1\cf0\par
+|\cf3 else\cf0 :| or \lang1033 |\cf11\lang22 elif\cf0 : \cf4 condi\'e7\'e3o2\cf0 ():|\par
+\tab\cf1 comando2\cf0\par
+\b0\fs32 --------------------------------------------\par
+
+\pard\sa200\sl276\slmult1\qc\ul\b\fs36 CORES NO TERMINAL\ulnone\par
+\par
+\lang1033 COMANDO -->  \\\cf4 033\cf2 [\cf1 style\cf0 ;\cf12 text\cf0 ;\cf3 back\cf0  \cf5 m\cf2 ]\par
+
+\pard\sa200\sl276\slmult1\cf0\b0\fs32\lang22 --------------------------------------------\cf2\b\fs36\lang1033\par
+\cf1 STYLE\cf0 : \b0 0(nulo) \b - 1(negrito) - \ul\b0 4(sublinhado)\ulnone\b  - \cf13\highlight14\b0 7(invertido)\b\par
+\cf0\highlight0\fs32\lang1046 ~ Define a estiliza\'e7\'e3o na fonte (0)\par
+\b0\lang22 --------------------------------------------\highlight15\b\fs36\lang1033\par
+\cf12\highlight0 TEXT\cf0 : \cf13\highlight14 30\highlight0  \cf0 - \cf2 31\cf0  - \cf1 32\cf0  - \cf16 33\cf0  - \cf3 34\cf0  - \cf10 35\cf0  - \cf17 36\cf0  - \cf18 37 \cf0\par
+\fs32 ~ Define a colora\'e7\'e3o da fonte (1)\fs36\par
+\b0\fs32\lang22 --------------------------------------------\par
+\cf3\b\fs36\lang1033 BACK\cf0 : 40 - \highlight2 41\highlight0  - \highlight19 42\highlight0  - \highlight16 43\highlight0  - \highlight7 44\highlight0  - \highlight20 45\highlight0  - \highlight21 46\highlight0  - \highlight22 47\highlight0  \par
+\par
+\fs32 ~ Define a colora\'e7\'e3o de fundo da fonte (2)\fs36\par
+\b0\fs32\lang22 --------------------------------------------\par
+
+\pard\sa200\sl276\slmult1\qc\b\lang1046\'c9 poss\'edvel tamb\'e9m utilizar o comando \cf4 .format() \cf0 para facilitar na organiza\'e7\'e3o do c\'f3digo; \par
+
+\pard\sa200\sl276\slmult1\cf2\par
+ex: \par
+\cf0 print(\cf8 'meu nome \'e9 \cf0\{\cf1 0\cf0\}\{\cf1 1\cf0\}\{\cf1 2\cf0\}\cf8 '\cf0  \par
+\cf4 .format\cf0 (\cf8 '\cf12\lang1033\\033\cf8 [4;34m'\cf0 , nome, \cf8 '\cf12\\033\cf8 [m'\cf0\lang1046 ))\par
+--> print: meu nome \'e9 \cf3\ul KENNY\par
+\par
+\cf0\ulnone\b0 "As chaves \{\} delimitam o inicio e fim da formata\'e7\'e3o realizada, caso n\'e3o utilize essa vai ocupar a linha de c\'f3digo inteira."\par
+\par
+
+\pard\sa200\sl276\slmult1\qc\b OU\par
+(RECOMENDADO)\par
+Utilizar arrays para pr\'e9-definir cores j\'e1 setadas em seu c\'f3digo, como por exemplo:\par
+\par
+
+\pard\sa200\sl276\slmult1\cf2 cores\cf0  = \{'\cf18 limpa\cf0 ':\cf8 '\cf12\lang1033\\033\cf8 [m\lang1046 '\cf0 ,\par
+\tab\tab '\cf3 azul\cf0 ':\cf8 '\cf12\lang1033\\033\cf8 [34m'\cf0 ,\par
+\tab\tab '\cf4 amarelo\cf0 ':\cf8 '\cf12\\033\cf8 [33m'\cf0\}\par
+\par
+print(\cf8 'meu nome \'e9 \cf0\{0\}\{1\}\{2\}\cf8 '\cf0\par
+\cf4 .format\cf0 (\cf2 cores\cf8 ['\cf16\highlight15 amarelo\cf8\highlight0 ']\cf0 , nome, \cf2 cores\cf8 ['\cf18 limpa\cf8 ']))\cf0\par
+--> print: meu nome \'e9 \cf4 KENNY\cf0\lang1046\par
+ \par
+
+\pard\sa200\sl276\slmult1\qc\highlight15\fs36\lang1033\par
+\par
+\par
+\highlight0\lang22\par
+\b0\par
+\par
+ \b\par
+\ul\b0\fs32\par
+\par
+\ulnone\par
+\par
+
+\pard\sa200\sl276\slmult1\line\f1\fs22\par
+}
+ 
